@@ -6,3 +6,8 @@
 meteor-platform
 autopublish
 insecure
+iron:router
+mizzao:bootstrap-3
+aldeed:simple-schema
+jquery-datatables
+
