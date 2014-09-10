@@ -1,2 +1,14 @@
+/*
+CSS de todos los templates, en general
+*/
 .top
 {margin-top: 5%;}
+
+.jumboCustom
+{margin-top: -15%;}
+
+.templateTitle
+{ margin-top: -12%; margin-bottom: 25px;}
+
+.containerCustom
+{ margin-bottom: 25px;}
