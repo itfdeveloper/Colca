@@ -10,7 +10,7 @@ Router.configure({
     }
 });
 Router.map(function(){
-    this.route('home', {path:'/home', template:'Home'});
+    this.route('home', {path:'/', template:'Home'});
     this.route('menu', {path:'/menu', template:'menu'});
     this.route('player',{path:'/player', template:'Players'});
 });
