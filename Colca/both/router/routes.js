@@ -9,6 +9,7 @@ Router.configure({
         'footer': { to: 'footer' }
     }
 });
+
 Router.map(function(){
     this.route('home', {path:'/', template:'Home'});
     this.route('menu', {path:'/menu', template:'menu'});
