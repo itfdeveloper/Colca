@@ -4,6 +4,7 @@
 
 Template.Players.events({
 "click #addButton": function(event, template){
+    alert("HOla");
     Session.set('editMode','insert');
     Session.set('selectedItem',null);
     $('#playerEdit').modal();
@@ -46,33 +47,8 @@ Template.Players.isUpdate = function ()
     return Session.get('editMode') == "update";
 };
 
-
 Template.Players.helpers({
-    playerDataTable: function (){
-     return {
-         id: 'playerDataTable',
-         columns: [
-             {
-               title:'Nombre',
-               data:'Name'
-             },
-             {
-                title:'Edad',
-                 data:'Age'
-             },
-             {
-                 title: 'Equipo',
-                 data: 'Team'
-             },
-             {
-                 title: 'Fecha de Creacion',
-                 data: 'createDate',
-                 mRender: function(data,type,row){
-                   return  moment(row.createDate).format("MM/DD/YYYY HH:MM:SS");
-                 }
-             }
-         ],
-         subscription: 'players'
-     }
+    players: function(){
+        return Players.find();
     }
 });
